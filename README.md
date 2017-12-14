@@ -1,10 +1,14 @@
-# bootstrapdirect
+# Vue.js Dashboard template
 
-> Using bootstrap directly on Vuejs
+> This Vuejs app is the skeleton to build a SPA Dashboard
 
 ## Build Setup
 
 ``` bash
+
+# clone project
+git clone git@github.com:vmalaga/vuejs-dashboard-template.git
+
 # install dependencies
 npm install
 
@@ -26,5 +30,3 @@ npm run e2e
 # run all tests
 npm test
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
