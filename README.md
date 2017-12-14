@@ -2,6 +2,8 @@
 
 > This Vuejs app is the skeleton to build a SPA Dashboard
 
+Using the Vuejs webpack template and adding support for bootstrap 4, this app allows you to build a dashboard with very few steps. I use it as a template to start new dashboards
+
 ## Build Setup
 
 ``` bash
