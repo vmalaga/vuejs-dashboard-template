@@ -8,7 +8,7 @@
     <p class="text-center">Using the Vuejs webpack template and adding support for bootstrap 4, this app allows you to build a dashboard with very few steps.
 I use it as a template to start new dashboards</p>
     <div class="progress">
-      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+      <div :class="wvaluenow" role="progressbar" :aria-valuenow="valuenow" aria-valuemin="0" aria-valuemax="100"></div>
     </div>
     <hr class="my-4">
     <div class="d-flex p-2" style="background-color: white;">
@@ -28,8 +28,31 @@ export default {
   name: 'Home_view',
   data () {
     return {
-      msg: 'Vuejs SPA Dashboard'
+      msg: 'Vuejs SPA Dashboard',
+      wvaluenow: 'progress-bar w-0',
+      valuenow: 0
     }
+  },
+  created: function () {
+    var self = this
+    var seq = 25
+    this.interval = setInterval(function () {
+      self.wvaluenow = 'progress-bar w-' + seq
+      console.log(self.wvaluenow)
+      console.log(self.valuenow)
+      self.valuenow = self.valuenow + 25
+      seq = seq + 25
+      if (seq === 100) {
+        seq = 0
+      }
+      if (self.valuenow === 100) {
+        self.valuenow = 0
+      }
+    }, 1000)
+  },
+  // clear interval when go to other page
+  beforeDestroy: function () {
+    clearInterval(this.interval)
   }
 }
 </script>

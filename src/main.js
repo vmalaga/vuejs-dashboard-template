@@ -5,7 +5,8 @@ import VueGoodTable from 'vue-good-table'
 import App from './App'
 import router from './router'
 
-require('./assets/css/theme.css')
+// Use if you need
+// require('./assets/css/theme.css')
 
 Vue.config.productionTip = false
 Vue.use(VueGoodTable)

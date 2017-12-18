@@ -66,7 +66,10 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+a {
+  color:darkgray;
+}
 .navbar {
   position: relative;
   display: flex;

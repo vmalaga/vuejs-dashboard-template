@@ -16,7 +16,7 @@ import vueFlashcard from 'vue-flashcard'
 
 export default {
   name: 'About_view',
-  components : { vueFlashcard },
+  components: { vueFlashcard },
   data () {
     return {
       msg: 'About Elasticsearch dashboard'
