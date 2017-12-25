@@ -79,7 +79,7 @@ a {
   padding: 0.5rem 1rem; }
   .navbar > .container,
   .navbar > .container-fluid {
-    display: flex;
+    display: -webkit-box;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between; 

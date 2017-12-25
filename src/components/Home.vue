@@ -42,7 +42,7 @@ export default {
       console.log(self.valuenow)
       self.valuenow = self.valuenow + 25
       seq = seq + 25
-      if (seq === 100) {
+      if (seq === 125) {
         seq = 0
       }
       if (self.valuenow === 100) {
